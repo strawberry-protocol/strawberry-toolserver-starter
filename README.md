@@ -23,6 +23,6 @@ This is a minimal example to demonstrate the basics of the MCP protocol. It's a 
 ## Docker
 
 ```
-docker build -t strawberry-toolsever .
+docker build -t strawberry-toolserver .
 docker run -p 3000:3000 strawberry-toolserver
 ```
