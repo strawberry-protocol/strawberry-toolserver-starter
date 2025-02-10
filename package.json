@@ -1,11 +1,12 @@
 {
-  "name": "@strawberryprotocol/hello-world-toolserver-example",
-  "description": "Strawberry.fun Hello World Toolserver Example",
+  "name": "@strawberryprotocol/toolserver-starter",
+  "description": "Strawberry.fun Toolserver Starter",
   "version": "1.0.0",
   "author": "Strawberry.fun Team",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_OPTIONS='--no-warnings' ts-node ./index.ts",
+    "build": "tsc",
+    "start": "NODE_OPTIONS='--no-warnings' node ./dist/index.js",
     "dev": "tsx ./index.ts",
     "lint": "eslint -c .eslintrc.json *.ts",
     "lint-fix": "eslint -c .eslintrc.json *.ts --fix",
@@ -14,7 +15,8 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.3.2",
-    "@strawberryprotocol/str-toolserver": "file:../../typescript",
+    "@strawberryprotocol/str-toolserver": "0.0.1",
+    "dotenv": "^16.4.7",
     "get-port": "^7.1.0"
   },
   "devDependencies": {

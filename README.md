@@ -18,4 +18,11 @@ npx @wong2/mcp-cli --sse http://localhost:3000/sse
 2. Send it any message via the MCP protocol
 3. It will send back exactly what you sent
 
-This is a minimal example to demonstrate the basics of the MCP protocol. It's a great starting point for learning how to build MCP tool servers. 
+This is a minimal example to demonstrate the basics of the MCP protocol. It's a great starting point for learning how to build MCP tool servers.
+
+## Docker
+
+```
+docker build -t strawberry-toolsever .
+docker run -p 3000:3000 strawberry-toolserver
+```
