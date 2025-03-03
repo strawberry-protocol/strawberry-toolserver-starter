@@ -102,7 +102,7 @@ LOCALHOST_TOKEN=0x123456789abcdef123456789abcdef1234567890
 
 2. **Interact** via an MCP-compatible client (e.g., `mcp-cli`):
    ```bash
-   npx @wong2/mcp-cli --sse http://localhost:3000/sse
+   npx @strawberryprotocol/mcp-cli --sse http://localhost:3000/sse
    ```
    - For the open server, you can simply send an `echo` request.
    - For the gated server, ensure you have a valid EIP-712 signature and hold tokens in your wallet.

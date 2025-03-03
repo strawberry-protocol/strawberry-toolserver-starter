@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "start": "NODE_OPTIONS='--no-warnings' node ./dist/index.js",
-    "dev": "tsx ./index.ts",
+    "dev": "tsx ./src/index.ts",
     "lint": "eslint -c .eslintrc.json *.ts",
     "lint-fix": "eslint -c .eslintrc.json *.ts --fix",
     "format": "prettier -c .prettierrc --write \"**/*.{ts,js,cjs,json,md}\"",
